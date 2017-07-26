@@ -406,7 +406,8 @@ RestWrite.prototype.transformUser = function() {
   }).then(() => {
     return this._validateUserName();
   }).then(() => {
-    return this._validateEmail();
+    if (!"emailVerified" in this.data || !this.data.emailVerified)
+      return this._validateEmail();
   });
 };
 
