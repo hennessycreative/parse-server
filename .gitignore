@@ -41,7 +41,7 @@ node_modules
 .vscode
 
 # Babel.js
-lib/
+# lib/
 
 # cache folder
 .cache
@@ -52,3 +52,7 @@ lib/
 
 # Folder created by FileSystemAdapter
 /files
+
+# Dev
+resources/
+spec/
